@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=kali
 Group=kali
-WorkingDirectory=/home/kali/Desktop/Muzaffar/Python/M/app/
-EnvironmentFile=/home/kali/Desktop/Muzaffar/Python/M/.env
-ExecStart=/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+WorkingDirectory=/home/kali/Desktop/Muzaffar/Python/API
+EnvironmentFile=/home/kali/Desktop/Muzaffar/Python/API/.env
+ExecStart=venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 
 [Install]
 WantedBy=multi-user.target

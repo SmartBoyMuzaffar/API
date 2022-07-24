@@ -1,5 +1,4 @@
 from typing import Optional, List
-from gpg import Data
 from pydantic import BaseModel, EmailStr, conint
 from datetime import datetime
 

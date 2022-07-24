@@ -1,4 +1,3 @@
-from django.db import router
 from fastapi import *
 from ..database import *
 from .. import schemas as sm

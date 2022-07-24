@@ -1,6 +1,5 @@
 from .database import *
 from sqlalchemy import *
-from sqlalchemy import Column
 
 
 class User(Base):

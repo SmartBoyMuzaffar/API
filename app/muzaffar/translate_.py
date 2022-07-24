@@ -3,7 +3,7 @@ from ..database import get_db
 from googletrans import Translator
 from fastapi import Depends, FastAPI, APIRouter
 from sqlalchemy.orm import Session
-from ..import models
+from .. import models
 
 from ..import schemas as sm
 ##############################################################################################################
@@ -36,7 +36,7 @@ trans = Translator()
 ########################################################################################################
 
 # @m.get('/Translator')
-@router.get('/trans-info')
+@router.get('')
 def _():
 
 

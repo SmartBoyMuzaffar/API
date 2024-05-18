@@ -1,0 +1,8 @@
+__pycache__
+.env
+Dockerfile
+.dockerignore
+.pytest_cache
+Procfile
+nginx
+gunicorn.service

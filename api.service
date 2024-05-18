@@ -1,0 +1,14 @@
+[Unit]
+Description=api
+After=network.target
+
+[Service]
+User=smartboy
+Group=smartboy
+WorkingDirectory=/home/smartboy/API/
+EnvironmentFile="PATH=/home/smartboy/API/venv/bin"
+ExecStart=/home/smartboy/API/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:m --bind 0.0.0.0:8000
+
+[Install]
+WantedBy=multi-user.target
+Alias=api.service

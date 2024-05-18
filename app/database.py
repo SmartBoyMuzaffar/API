@@ -13,7 +13,7 @@ from .config import settings
 
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./db.db"
 # SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_host}/{settings.database_name}"
-SQLALCHEMY_DATABASE_URL = "postgresql://postgresql:oW0Al1JPI03FikwBTkAQcX4d5STstWy0@dpg-cnlujkol5elc73cb0e20-a.oregon-postgres.render.com/pgdb_y28n"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgresql:oW0Al1JPI03FikwBTkAQcX4d5STstWy0@dpg-cnlujkol5elc73cb0e20-a.oregon-postgres.render.com/api"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 

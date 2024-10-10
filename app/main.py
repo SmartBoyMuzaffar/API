@@ -68,9 +68,8 @@ def root(request: Request, db: Session=Depends(get_db)):
 
     data = db.query(models.User).all() # select * from user_db;
 
-
     return templates.TemplateResponse(
-        request=request, name="index.html", context={"data":"API"}
+        "index.html", {"request": request, "data": "API"}
     )
     # return my_posts
 

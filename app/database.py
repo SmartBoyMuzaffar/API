@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 # from psycopg2.extras import RealDictCursor
 # import psycopg2
 # import time
-from .config import settings
+# from .config import settings
 
 
 
